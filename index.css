@@ -1,5 +1,56 @@
 div {
     height: 200px;
-    width: 99vw;
-    background-color: aquamarine;
-  }
+    width: 95%;
+    padding: 20px;
+    margin: 20px;
+    align-items: center;
+    border: 5px solid darkcyan;
+}
+
+h1.symptoms
+{
+    margin-bottom: 75px;
+    font-size: 50px;
+}
+p
+{
+    font-size: 25px;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+/*Table stuff*/
+table.maintable
+{
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    font-size: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    border: 2px solid black;
+    border-spacing:0;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0 ,0 ,0.5);
+    width: 80%;
+    box-sizing: border-box;
+    
+}
+.maintable thead{
+    background-color: seagreen;
+    text-align: center;
+    color: white;
+    border: 2px solid black;
+    height: 100 px;
+}
+.maintable th, td{
+    padding: 10px 10px;
+    border: 1px solid black;
+}
+.page2
+{
+    height: 800px;
+    padding: 100px;
+    margin: 50px;
+    width: 80%;
+}
