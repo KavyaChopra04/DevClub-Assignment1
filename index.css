@@ -1,12 +1,33 @@
-div {
+.a {
     height: 200px;
-    width: 95%;
+    width: 80vw;
     padding: 20px;
-    margin: 20px;
+    margin: auto;
     align-items: center;
     border: 5px solid darkcyan;
 }
-
+.page2
+{
+    height: 800px;
+    padding: 100px;
+    margin: auto;
+    width: 80vw;
+    border: 5px solid darkcyan;
+    align-items: center;
+}
+.page3
+{
+    height: 900px;
+    padding: 100px;
+    margin: auto;
+    width: 80vw;
+    border: 5px solid darkcyan;
+    align-items: center;
+}
+body
+{
+    background-color: rgba(29, 160, 153);
+}
 h1.symptoms
 {
     margin-bottom: 75px;
@@ -47,10 +68,62 @@ table.maintable
     padding: 10px 10px;
     border: 1px solid black;
 }
-.page2
-{
-    height: 800px;
-    padding: 100px;
-    margin: 50px;
-    width: 80%;
-}
+
+/*PAGE3 FLIP CARDS*/
+.flip-card1 {
+    background-color: transparent;
+    width: 70vw;
+    height: 300px;
+    border: 2px solid seagreen;
+     /* Remove this if you don't want the 3D effect */
+    align-items: "center";
+    margin: auto;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 70vw;
+    height: 200px;
+     /* Remove this if you don't want the 3D effect */
+    align-items: "center";
+    margin: auto;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0 0 10px rgba(0, 0 ,0 ,0.5);
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card1:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: white;
+    color: seagreen;
+    transform: rotateY(180deg);
+  }
