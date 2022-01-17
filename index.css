@@ -1,60 +1,87 @@
-.a {
-    height: 200px;
-    width: 80vw;
-    padding: 20px;
-    margin: auto;
-    align-items: center;
-    border: 5px solid darkcyan;
-}
-.page2
+.page1
 {
-    height: 800px;
+    height: 100vh;
     padding: 100px;
     margin: auto;
     width: 80vw;
-    border: 5px solid darkcyan;
     align-items: center;
+    color: rgb(0, 51, 0);
+    border: 5px solid black;
+}
+
+.page2
+{
+    height: 100vh;
+    padding: 100px;
+    margin: auto;
+    width: 80vw;
+    align-items: center;
+    border: 5px solid black;
+}
+.a {
+  height: 30vh;
+  width: 80vw;
+  padding: 20px;
+  margin: auto;
+  align-items: center;
+  border: 5px solid black;
+}
+.pg2img
+{
+  height: 20vh;
+  width: 30vh;
+  padding: 5vh;
+}
+.h3
+{
+  font-size: 30vh;
+  padding: 5vh;
 }
 .page3
 {
-    height: 900px;
+    height: 100vh;
     padding: 100px;
     margin: auto;
     width: 80vw;
-    border: 5px solid darkcyan;
     align-items: center;
+    border: 5px solid black;
 }
 body
 {
-    background-color: rgba(29, 160, 153);
+  background-color: rgb(0, 230, 172);
 }
 h1.symptoms
 {
     margin-bottom: 75px;
-    font-size: 50px;
+    font-size: 5vh;
+    color: seagreen;
+
 }
 p
 {
-    font-size: 25px;
-    font-family: Calibri, Helvetica, Arial, sans-serif;
+    font-size: 3vh;
+    font-family: 'Playfair Display', serif;
 }
 /*Table stuff*/
 table.maintable
 {
     margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     margin-right: auto;
-    font-size: 40px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 80vh;
+    font-size: 4vh;
+    font-family: 'Playfair Display', serif;
     text-align: left;
-    border: 2px solid black;
+    border: 3px solid black;
     border-spacing:0;
     border-collapse: collapse;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0 ,0 ,0.5);
     width: 80%;
     box-sizing: border-box;
+    border-radius: 3px;
+    padding: 10vh;
     
 }
 .maintable thead{
@@ -68,13 +95,14 @@ table.maintable
     padding: 10px 10px;
     border: 1px solid black;
 }
-
+td{
+  background-color: aliceblue;
+}
 /*PAGE3 FLIP CARDS*/
 .flip-card1 {
     background-color: transparent;
     width: 70vw;
-    height: 300px;
-    border: 2px solid seagreen;
+    height: 35vh;
      /* Remove this if you don't want the 3D effect */
     align-items: "center";
     margin: auto;
@@ -82,7 +110,7 @@ table.maintable
   .flip-card {
     background-color: transparent;
     width: 70vw;
-    height: 200px;
+    height: 20vh;
      /* Remove this if you don't want the 3D effect */
     align-items: "center";
     margin: auto;
@@ -115,15 +143,16 @@ table.maintable
     backface-visibility: hidden;
   }
   
-  /* Style the front side (fallback if image is missing) */
   .flip-card-front {
     background-color: white;
     color: black;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5vh;
   }
   
-  /* Style the back side */
   .flip-card-back {
     background-color: white;
     color: seagreen;
     transform: rotateY(180deg);
+    font-family: 'Playfair Display', serif;
   }
