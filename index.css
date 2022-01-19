@@ -1,68 +1,102 @@
-.page1
-{
-    height: 100vh;
-    padding: 100px;
-    margin: auto;
-    width: 80vw;
-    align-items: center;
-    color: rgb(0, 51, 0);
-    border: 5px solid black;
+/*INITIALISATION*/
+*{
+    margin: 0;
+    padding: 0;
 }
-
-.page2
+/*NAVBAR*/
+.navbar
 {
-    height: 100vh;
-    padding: 100px;
-    margin: auto;
-    width: 80vw;
-    align-items: center;
-    border: 5px solid black;
+    display: flex;
+    background-color: black;
+    position: fixed;
+    cursor: pointer;
+    width: 100vw;
+    z-index: 10;
 }
-.a {
-  height: 30vh;
-  width: 80vw;
-  padding: 20px;
-  margin: auto;
-  align-items: center;
-  border: 5px solid black;
+.navlist{
+    list-style: none;
+    display: flex;
+    
 }
-.pg2img
-{
-  height: 20vh;
-  width: 30vh;
-  padding: 5vh;
+.navlist li{
+    padding: 2.5vh 3.5vh;
+    border: 2px solid black;
 }
-.h3
-{
-  font-size: 30vh;
-  padding: 5vh;
-}
-.page3
-{
-    height: 100vh;
-    padding: 100px;
-    margin: auto;
-    width: 80vw;
-    align-items: center;
-    border: 5px solid black;
-}
-body
-{
-  background-color: rgb(0, 230, 172);
-}
-h1.symptoms
-{
-    margin-bottom: 75px;
-    font-size: 5vh;
-    color: seagreen;
-
-}
-p
-{
-    font-size: 3vh;
+.navlist li a{
+    text-decoration: none;
     font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 5vh;
 }
-/*Table stuff*/
+/*HOME*/
+.homehead
+{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 11vh;
+}
+.home
+{
+    padding: 50vh 10vh 30vh;
+    margin: auto;
+    background: rgba(0,0,0,0.6) url('coronavirus-2.jpg');
+    background-size: cover;
+    background-blend-mode: hue;
+}
+/*TIPS PAGE*/
+.tips
+{
+    display: flex;
+    flex-direction: column;
+    padding: 5vh;
+}
+.tips h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 10vh;
+    padding: 5vh;
+    margin:auto;
+}
+.wmas{
+    font-family: 'Playfair Display', serif;
+    font-size: 7vh;
+    margin:0px 3vw 0px 45vw;
+}
+.whan{
+    font-family: 'Playfair Display', serif;
+    font-size: 7vh;
+    margin:0px 40vw 0px 3vw;
+}
+.tipsub
+{
+    width:80vw;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 30px;
+    align-items: center;
+    margin: 5vh;
+    padding: 5vh;
+    background-color: #ddddff;
+}
+.tipsub img{
+    height: 30vh;
+    border-radius: 150px;
+    border: 2px solid black;
+}
+/*SYMPTOMS PAGE*/
+.symptoms
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #bbbbff;
+    align-items: center;
+}
+.symptoms h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 10vh;
+    padding: 5vh;
+    margin:auto;
+    color: darkslategray;
+}
 table.maintable
 {
     margin-left: auto;
@@ -72,7 +106,7 @@ table.maintable
     height: 80vh;
     font-size: 4vh;
     font-family: 'Playfair Display', serif;
-    text-align: left;
+    text-align: center;
     border: 3px solid black;
     border-spacing:0;
     border-collapse: collapse;
@@ -80,43 +114,56 @@ table.maintable
     box-shadow: 0 0 20px rgba(0, 0 ,0 ,0.5);
     width: 80%;
     box-sizing: border-box;
-    border-radius: 3px;
+    border-radius: 20px;
     padding: 10vh;
     
 }
-.maintable thead{
-    background-color: seagreen;
-    text-align: center;
-    color: white;
-    border: 2px solid black;
-    height: 100 px;
-}
 .maintable th, td{
     padding: 10px 10px;
-    border: 1px solid black;
+    border: 3px solid #003152;
+}
+.maintable thead{
+    background-color: #003152;
+    color: white;
+    border: 3px solid black;
+    height: 100 px;
 }
 td{
   background-color: aliceblue;
 }
-/*PAGE3 FLIP CARDS*/
+/*FAQ PAGE*/
+.faq
+{
+    display: flex;
+    flex-direction: column;
+    padding: 5vh;
+    background-color: #669dc7;
+    align-items: center;
+}
+.faq h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 10vh;
+    padding: 5vh;
+    margin:auto;
+    color: darkslategray;
+}
 .flip-card1 {
     background-color: transparent;
     width: 70vw;
     height: 35vh;
-     /* Remove this if you don't want the 3D effect */
     align-items: "center";
-    margin: auto;
+    margin: 3vh;
+
   }
   .flip-card {
     background-color: transparent;
     width: 70vw;
     height: 20vh;
-     /* Remove this if you don't want the 3D effect */
     align-items: "center";
-    margin: auto;
+    margin: 3vh;
+    z-index: 1;
   }
   
-  /* This container is needed to position the front and back side */
   .flip-card-inner {
     position: relative;
     width: 100%;
@@ -127,32 +174,87 @@ td{
     box-shadow: 0 0 10px rgba(0, 0 ,0 ,0.5);
   }
   
-  /* Do an horizontal flip when you move the mouse over the flip box container */
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
   .flip-card1:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
-  /* Position the front and back side */
   .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0 ,0 ,0.5);
+    
   }
   
   .flip-card-front {
-    background-color: white;
-    color: black;
+    background-color: aliceblue;
+    color: darkcyan;
     font-family: 'Playfair Display', serif;
-    font-size: 2.5vh;
+    font-size: 5vh;
+    width: 70vw;
   }
   
   .flip-card-back {
-    background-color: white;
-    color: seagreen;
+    background-color: #ddddff;
+    color: #003152;
     transform: rotateY(180deg);
     font-family: 'Playfair Display', serif;
+    font-size: 3vh;
+    width: 70vw;
   }
+/*YOUTUBE*/
+.youtube h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 10vh;
+    padding: 2vh;
+    margin: auto;
+    color: darkslategray;
+    
+}
+.youtube
+{
+    padding: 5vh;
+    background-color: #bbbbff;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+iframe{
+    padding: 15vh;
+}
+/*FOOTER*/
+#footer
+{
+    background-color: black;
+    font-family: 'Playfair Display', serif;
+    font-size: 3vh;
+    text-align: center;
+    color: white;
+    width: 100vw;
+    height: 15vh;
+}
+.fa-ul
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    
+}
+.fa-ul li{
+    padding: 1vh 1vh;
+}
+.fa-ul li a{
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    justify-content: center;
+    font-size: 6vh;
+}
+/**/
