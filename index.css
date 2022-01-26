@@ -64,7 +64,7 @@
 .tips h1{
     font-family: 'Playfair Display', serif;
     font-size: 10vh;
-    padding: 5vh;
+    padding: 10vh;
     margin:auto;
     color: #f4f2ee;
 }
@@ -110,7 +110,7 @@
 .symptoms h1{
     font-family: 'Playfair Display', serif;
     font-size: 10vh;
-    padding: 5vh;
+    padding: 10vh;
     margin:auto;
     color: rgb(176, 213, 213);
     font-weight: 800;
@@ -121,7 +121,7 @@
     margin-top: 10vh;
     margin-bottom: 10vh;
     margin-right: auto;
-    height: 80vh;
+    height: 60vh;
     font-size: 4vh;
     font-family: 'Playfair Display', serif;
     text-align: center;
@@ -130,7 +130,7 @@
     border-collapse: collapse;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0 ,0 ,0.5);
-    width: 80%;
+    width: 60%;
     box-sizing: border-box;
     border-radius: 20px;
     padding: 10vh;
@@ -170,7 +170,7 @@
 .faq h1{
     font-family: 'Playfair Display', serif;
     font-size: 10vh;
-    padding: 5vh;
+    padding: 10vh;
     margin:auto;
     color: rgb(176, 213, 213);
 }
@@ -242,6 +242,7 @@
     box-shadow: 0 0 10px rgba(0, 0 ,0 ,0.5);
     
     display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -249,14 +250,17 @@
   .flip-card-front {
     background-color: rgb(29, 33, 34);
     color: rgb(112, 255, 255);
-    font-family: 'Playfair Display', serif;
-    font-size: 5vh;
-    text-align: centre;
+    font-family: 'Playfair Display', serif;    
+    text-align: justify;
     margin:auto;
     width: 70vw;
     display:flex;
     align-items: center;
     justify-content: center;
+  }
+  .flip-card-front h3
+  {
+    font-size: 4vh;
   }
   .flip-card-back {
     background-color: rgb(36, 38, 40);
@@ -270,12 +274,13 @@
     align-items: center;
     justify-content: center;
     padding: 2vh;
+    text-align: justify;
   }
 /*YOUTUBE*/
 .youtube h1{
     font-family: 'Playfair Display', serif;
     font-size: 10vh;
-    padding: 5vh;
+    padding: 10vh;
     margin: auto;
     color: rgb(176, 213, 213);
     
@@ -327,7 +332,6 @@ iframe{
     margin: 2vh;
     line-height: 4vh;
     font-size: 3vh;
-    border: 0.5vw solid rgb(147, 137, 121);
 }
 .icons a i{
     transition: all 0.4s linear;
